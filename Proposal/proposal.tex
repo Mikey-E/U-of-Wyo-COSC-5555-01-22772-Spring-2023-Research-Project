@@ -1,0 +1,52 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\title{ML 5555-01 (22772) Spring 2023 Project Proposal}
+\author{Michael Elgin, Long Tran}
+\date{February 11, 2023}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\section{Summary}
+
+Feature engineering has long been the focus of those seeking to improve model performance. With the recent advancement of image outpainting being available to the general public, we propose to investigate the effect that outpainting as a form of feature engineering has on the ability of an image dataset to make a classifier perform well.
+
+Our research experiment will consist of at least one type of image classifier trained on a reputable dataset, serving as a control group from which to benchmark changes. A second dataset equal in size $(N)$ will be constructed by outpainting every image used in the training of our first classifier. This new partially synthetic data will be used to train at least one classifier of identical architecture with the possible exception of a modified input layer that can accept the new dimensions of the outpainted data. These classifiers will be compared in terms of standard metrics such as accuracy, precision, recall, etc. to determine if outpainting has any merit as a form of feature engineering.
+
+\section{Scientific Merit}
+
+With AI image outpainting being a somewhat recent (2022) invention, this new technology remains still largely unexplored while simultaneously having tremendous potential to produce synthetic data. Knowledge about the effect that synthetic or partially synthetic data has on the ability to improve classifier performance would be extremely valuable given that collecting real data is often difficult, so much so that it is cost-prohibitive at high scale.
+
+\section{Interest \& Broader Impacts}
+
+Image classifiers are being deployed everywhere, with applications including facial recognition and autonomous vehicles. Depending on the circumstances, the cost of misclassifications can be dire. To the extent that image classifiers can be improved, the consequences can range from saving money (or time) to saving lives.
+
+\section{Approach}
+
+\subsection{The Control Group}
+
+We will create the control group by training a convolutional neural-net (CNN) on the CIFAR-10 dataset. This classifier will use two different categories to function as positive and negative. Subject to the speed that it takes to create outpainted images, we plan on using the full 5,000 training and 1,000 testing images for each chosen class.
+
+\subsection{The Outpainted Dataset}
+
+The new dataset(s) will be created by performing outpainting on the CIFAR-10 subsets we used in the control group. We will outpaint to dimensions chosen by considering the effect that larger dimensions have on training speed. Tentatively we expect to increase the standard 32x32 dimensions up to 48x48 or 64x64 or 128x128 assuming this does not severely increase processing time to train the models nor make the new dataset(s) occupy a burdensome amount of memory. We plan on using Stable Diffusion to compute this outpainting.
+
+There will be a convolutional neural-net (CNN) of identical internal architecture i.e. hidden layers, while only the input layer may be changed to accept outpainted data of new dimensions.
+
+We plan to use Keras and Tensorflow as the tools to create these models from a high level of abstraction.
+
+\section{Previous Research and Difference}
+
+After searching for research papers containing the keywords "outpainting" and "data augmentation" we were not able to find any previous research of this exact kind of experiment in 135 results on Google Scholar. Given the lack of similar research and recency of AI image outpainting, we are fairly confident that this research is novel. If similar research can be found, please bring it to our attention.
+
+\section{Validation}
+
+These two classifiers will be evaluated according to standard metrics for evaluating classifiers. This includes but is not limited to computing accuracy, precision, recall, and creating a confusion matrix.
+
+Once these metrics have been computed for all models, they will be compared to determine the effect that outpainting a dataset may have on the performance of classifiers. If there is a marked improvement in performance, we will discuss why that might have happened. Likewise, if there is no significant improvement in performance, we will attempt to investigate why that might be the case as well.
+
+\end{document}
