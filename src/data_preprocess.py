@@ -18,7 +18,7 @@ def main():
 	#asserts will stop the file from running if it need not be.
 	assert(os.path.exists(DATA_PATH))
 	assert(len(os.listdir(DATA_PATH)) != 0) #stuff inside
-	assert(not os.path.exists(IMG_PATH))
+	assert(not (os.path.exists(IMG_PATH) and os.path.exists(LABELS_PATH)))
 
 	os.mkdir(IMG_PATH)
 	os.mkdir(IMG_PATH + "train")
@@ -51,6 +51,10 @@ def main():
 
 	assert(len(train_label_subset) == 10000) #5000 horse + 5000 ship
 	assert(len(test_label_subset) == 2000) #1000 horse + 1000 ship
+
+	#Convert to 0 and 1
+	train_label_subset = [(0 if label == 7 else 1) for label in train_label_subset]
+	test_label_subset = [(0 if label == 7 else 1) for label in test_label_subset]
 
 	with open(LABELS_PATH + "train.pickle", "wb") as f:
 		pickle.dump(train_label_subset, f)
