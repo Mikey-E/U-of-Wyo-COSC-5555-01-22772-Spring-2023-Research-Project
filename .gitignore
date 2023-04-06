@@ -1,1 +1,9 @@
+#Proposal "accessories"
 Proposal/brainstorming.txt
+
+#Development batch files
+src/r.bat
+src/t.bat
+
+#The cifar-batches that can easily be got if desired.
+data/cifar-10-batches-py/*
