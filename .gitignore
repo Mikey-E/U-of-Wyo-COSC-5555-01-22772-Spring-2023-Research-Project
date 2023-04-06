@@ -7,3 +7,5 @@ src/t.bat
 
 #The cifar-batches that can easily be got if desired.
 data/cifar-10-batches-py/*
+
+__pycache__
