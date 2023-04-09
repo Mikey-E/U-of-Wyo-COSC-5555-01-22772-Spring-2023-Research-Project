@@ -82,10 +82,11 @@ def train_model():
         shuffle=True
     )
 
-    model.save(str('D:/U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project/src/model2.h5'))
+    model.save('../models/model2.h5')
 
 def load_model():
-    model = keras.models.load_model(str('D:/U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project/src/model2.h5'))
+    model = keras.models.load_model('../models/model2.h5')
+
     test_data = np.array(load_data("test", 32))
     test_label = np.array(load_labels("test"))
     scores = model.evaluate(test_data, test_label, verbose=1)
