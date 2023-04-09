@@ -10,6 +10,27 @@ data_preprocess.py contains (for reference) the code used to extract the relevan
 run this to replicate the original cifar10 subset we used. It is included for reproducibility without the burden to
 actually run it.
 
+### Outpainting specifications
+
+| Parameter                | Value                              |
+|--------------------------|------------------------------------|
+| Checkpoint               | v2-1_768-ema-pruned.ckpt [ad2a33c361] |
+| Resize mode              | Just resize                        |
+| Sampling method          | Euler a                            |
+| Sampling steps           | 20                                 |
+| Width                    | 64                                 |
+| Height                   | 64                                 |
+| CFG scale (no prompt)    | 7                                  |
+| Denoising strength       | 0                                  |
+| Seed                     | 0                                  |
+| Script                   | Outpainting mk2                    |
+| Pixels to expand         | 8                                  |
+| Mask Blur                | 1                                  |
+| Outpainting Directions   | left, right, up, down              |
+| Fall-off exponent        | 1                                  |
+| Color variation          | 0.05                               |
+
+
 ### Functions to Load Data
 
 There are two functions for loading the datasets: load_data() and load_labels(). They return ordered sets in sync with each
