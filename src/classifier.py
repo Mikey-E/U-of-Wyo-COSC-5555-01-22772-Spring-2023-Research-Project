@@ -84,13 +84,12 @@ def train_model():
 def load_model():
     model = keras.models.load_model('../models/model2.h5')
 
-    test_data = np.array(load_data("test", 32))
-    test_label = np.array(load_labels("test"))
     scores = model.evaluate(test_data, test_label, verbose=1)
     print('Test accuracy:', scores[1])
 
 def main():
-	train_model()
+	#train_model()
+    #load_model()
 
 if __name__ == "__main__":
 	main()
