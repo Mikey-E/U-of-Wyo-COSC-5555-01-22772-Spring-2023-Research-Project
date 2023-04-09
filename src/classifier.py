@@ -10,9 +10,10 @@ from load_data import load_data, load_labels
 
 import numpy as np
 
-train_data = np.array(load_data("train", 32))
+train_data = load_data("train", 32)
+test_data = load_data("test", 32)
+
 train_label = np.array(load_labels("train"))
-test_data = np.array(load_data("test", 32))
 test_label = np.array(load_labels("test"))
 
 def get_model():
