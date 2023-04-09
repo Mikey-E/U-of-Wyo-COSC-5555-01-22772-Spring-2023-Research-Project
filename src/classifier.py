@@ -1,10 +1,7 @@
 import keras
-from keras import backend as K
 from keras.models import Sequential
-from keras.layers import Layer, Dense, Activation, Dropout, Flatten
+from keras.layers import Dense, Activation, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
-from keras.layers import BatchNormalization
-from keras.utils import to_categorical
 
 from load_data import load_data, load_labels
 
