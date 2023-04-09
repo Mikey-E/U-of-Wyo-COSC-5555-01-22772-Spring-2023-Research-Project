@@ -92,4 +92,8 @@ def load_model():
     scores = model.evaluate(test_data, test_label, verbose=1)
     print('Test accuracy:', scores[1])
 
-train_model()
+def main():
+	train_model()
+
+if __name__ == "__main__":
+	main()
