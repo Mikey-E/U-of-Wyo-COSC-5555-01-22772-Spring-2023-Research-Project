@@ -14,6 +14,7 @@ train_label = np.array(load_labels("train"))
 test_label = np.array(load_labels("test"))
 
 def get_model():
+	"""example from which to base changes on"""
     model = Sequential()
     model.add(Conv2D(32, (3, 3), padding='same',
                     input_shape=train_data.shape[1:]))
