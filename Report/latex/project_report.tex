@@ -1,0 +1,114 @@
+%IEEE template from https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn
+%Much template code eliminated.
+
+%Report body is to be 4-10 pages EXCLUDING any reference and/or appendix
+%pdf submission should be named "project_report.pdf"
+
+\documentclass[conference]{IEEEtran}
+
+%Leftover imports from the template. Most likely won't be needed.
+%\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+%\usepackage{textcomp}
+%\usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{comment}
+
+\usepackage[style=ieee]{biblatex}
+\addbibresource{citations.bib}
+\AtNextBibliography{\footnotesize}
+
+\begin{document}
+
+\title{COSC 5555-01 (22772) Spring 2023 Research Project: The effect of outpainting as a form of feature engineering on image classification}
+
+\author{\IEEEauthorblockN{Michael Elgin}
+\IEEEauthorblockA{\textit{University of Wyoming} \\
+\textit{School of Computing}\\
+Laramie, WY, USA\\
+melgin@uwyo.edu}
+\and
+\IEEEauthorblockN{Long Tran}
+\IEEEauthorblockA{\textit{University of Wyoming} \\
+\textit{School of Computing}\\
+Laramie, WY, USA \\
+ltran2@uwyo.edu}
+}
+
+\maketitle
+
+\clearpage %This is because we are supposed to have a cover page.
+
+\section{Problem Statement}
+% What is the problem that you are addressing?
+
+Image classifiers suffer from misclassifications. The natural objective is to reduce the quantity of these by any way possible. Feature engineering has long been the focus of those seeking to improve model performance. With the recent advancement of image outpainting being available to the general public, we investigate the effect that outpainting as a form of feature engineering has on the
+ability of an image dataset to make a classifier perform well.
+
+\section{Significance}
+% What is the significance of your work? How your work adds to the body of the existing knowledge?
+
+\section{Literature Survey}
+% What has already been done? How your work is different than what has already been done in the literature?
+
+\section{Dataset Description}
+% Detailed description of any dataset that you are using.
+
+\section{Methodology}
+% What is your approach to solve the problem?
+
+\section{Results}
+% By the end of the project, what have you accomplished?
+
+\section{Challenges}
+% Are there any challenges that you faced? Please describe what you did to mitigate the challenges. OR what changes you had to do to achieve the presented work. (You may address technical challenges or logistic challenges or both.)
+
+Stable Diffusion install?
+All outpainting parameters, esp
+    -mask blur, color variation
+
+\section{Conclusions}
+% Present a summary of your work and draw conclusions (if any).
+
+\section{Possible Venue(s)}
+% What are the suitable venues where your work can be shared? For example, you could mention a conference where you may want to present your work.
+
+While we acknowledge the so called ``top tier" AI conferences such as ICML, ICLR, AAAI, NeurIPS, etc., we feel most comfortable submitting papers only to conferences we have been to before. Michael Elgin has only attended AGI-22 in Seattle. That conference consisted of several lightning rounds of papers. AGI-23 is scheduled to be in Stockholm though there are no plans at this time to attend, and it feels like submitting a paper would come with the expectation of attendance, even if only virtually.
+
+Furthermore, consideration of submission should, in our opinion, be contingent upon a working proof-of-concept i.e. that we discovered something worthwhile, not merely confirmed that something didn't work very well.
+
+%Long have you been to any of these? Feel free to add your thoughts. I'm not trying to put words in your mouth by the use of "we/our". Feel free to edit.
+
+\section{Contributions}
+% What contributions are made by each of the team members to achieve the presented work.
+
+\subsection{Michael Elgin}
+\begin{enumerate}
+    \item LaTeX base code
+    \item Image outpainting via Stable Diffusion
+    \item Proposal text (concurrently)
+    \item data\_preprocess.py
+    \item load\_data.py
+    \item Report sections
+    \begin{enumerate}
+        \item Possible Venues
+        \item Problem Statement
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Long Tran}
+\begin{enumerate}
+    \item Proposal text (concurrently)
+    \item classifier.py
+    \item Report sections
+    \begin{enumerate}
+        \item PLACEHOLDER
+    \end{enumerate}
+\end{enumerate}
+
+\cite{example}
+
+\printbibliography
+
+\end{document}
