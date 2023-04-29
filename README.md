@@ -36,6 +36,10 @@ actually run it.
 There are two functions for loading the datasets: load_data() and load_labels(). They return ordered sets in sync with each
 other i.e. the index of a dataset item from load_data has its label at the same index in the list from load_labels.
 
+### Presentation
+
+https://docs.google.com/presentation/d/1M0CH5_qJHTCSna_k0GoQurjjvSQ2R3Grq4Bn3dNkPno/edit
+
 ### References
 
 https://www.binarystudy.com/2021/09/how-to-load-preprocess-visualize-CIFAR-10-and-CIFAR-100.html
