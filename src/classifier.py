@@ -115,7 +115,7 @@ def main():
 #	train_model("32", batch_size=32, epochs=25)
 #	train_model("64", batch_size=32, epochs=25)
     score_model("../models/model2_32.h5")
-    score_model("../models/model2_64.h5")
+#    score_model("../models/model2_64.h5")
 
 if __name__ == "__main__":
 	main()
