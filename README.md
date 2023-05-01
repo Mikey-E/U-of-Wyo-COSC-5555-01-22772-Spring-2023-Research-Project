@@ -40,6 +40,11 @@ other i.e. the index of a dataset item from load_data has its label at the same 
 
 https://docs.google.com/presentation/d/1M0CH5_qJHTCSna_k0GoQurjjvSQ2R3Grq4Bn3dNkPno/edit
 
+### Models
+
+At least one model (the size 64 one) is too big to push to Github. If you wish, you can of course make it yourself
+from scratch using the training data. Simply uncomment the 2 training lines in the main function in classifier.py
+
 ### References
 
 https://www.binarystudy.com/2021/09/how-to-load-preprocess-visualize-CIFAR-10-and-CIFAR-100.html

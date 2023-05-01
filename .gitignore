@@ -9,3 +9,6 @@ src/t.bat
 data/cifar-10-batches-py/*
 
 __pycache__
+
+#64 model too big to push to Github
+models/model2_64.h5
