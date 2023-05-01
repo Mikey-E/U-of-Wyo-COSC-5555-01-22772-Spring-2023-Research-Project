@@ -36,6 +36,10 @@ actually run it.
 There are two functions for loading the datasets: load_data() and load_labels(). They return ordered sets in sync with each
 other i.e. the index of a dataset item from load_data has its label at the same index in the list from load_labels.
 
+### Presentation
+
+https://docs.google.com/presentation/d/1M0CH5_qJHTCSna_k0GoQurjjvSQ2R3Grq4Bn3dNkPno/edit
+
 ### Models
 
 At least one model (the size 64 one) is too big to push to Github. If you wish, you can of course make it yourself
