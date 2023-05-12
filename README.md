@@ -1,5 +1,12 @@
 # U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project
 
+### Dependency Versions
+
+- keras 2.12.0
+- tensorflow 2.12.0
+- numpy 1.23.5
+- matplotlib 3.7.0
+
 ### Data and Labels
 
 The classifier(s) are trained on only the horses and ships from cifar-10. Horses are labeled 0; ships 1.
