@@ -1,5 +1,12 @@
 # U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project
 
+### Dependency Versions
+
+- keras 2.12.0
+- tensorflow 2.12.0
+- numpy 1.23.5
+- matplotlib 3.7.0
+
 ### Data and Labels
 
 The classifier(s) are trained on only the horses and ships from cifar-10. Horses are labeled 0; ships 1.
@@ -44,7 +51,3 @@ https://docs.google.com/presentation/d/1M0CH5_qJHTCSna_k0GoQurjjvSQ2R3Grq4Bn3dNk
 
 At least one model (the size 64 one) is too big to push to Github. If you wish, you can of course make it yourself
 from scratch using the training data. Simply uncomment the 2 training lines in the main function in classifier.py
-
-### References
-
-https://www.binarystudy.com/2021/09/how-to-load-preprocess-visualize-CIFAR-10-and-CIFAR-100.html
