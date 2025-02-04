@@ -1,6 +1,6 @@
 # U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project
 
-Here we explore the effect of outpainted training data on CIFAR-10 image classifier performance. Spoiler alert: it didn't help very much. The report is the main thing worth looking at here, if you're interested.
+Here we explore the effect of outpainted training data on CIFAR-10 image classifier performance. Spoiler alert: it didn't help very much. The [report](https://github.com/Mikey-E/U-of-Wyo-COSC-5555-01-22772-Spring-2023-Research-Project/blob/main/Report/latex/project_report.pdf) is the main thing worth looking at here, if you're interested. Trying to run the code probably won't work since not all the data is available anymore.
 
 ### Dependency Versions
 
