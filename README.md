@@ -1,5 +1,7 @@
 # U-of-Wyo-ML-5555-01-22772-Spring-2023-Research-Project
 
+Here we explore the effect of outpainted training data on CIFAR-10 image classifier performance. Spoiler alert: it didn't help very much. The report is the main thing worth looking at here, if you're interested.
+
 ### Dependency Versions
 
 - keras 2.12.0
